@@ -622,134 +622,188 @@
                                         </li>
 
                                     </ul>
-                                    <div class="tab-content">
+                                    <div class="tab-content" id="tabcont">
 
                                         <!--                                        medical section-->
 
 
                                         <div class="tab-pane fade show active" id="navs-top-medical" role="tabpanel">
 
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="card m-2 row ">
-                                                        <div class="col"><h4>Medical Leave</h4></div>
-                                                        <div class="row mb-3">
-                                                            <div class="col-3 text-center">
-                                                                <div><img src="assets/img/custom/medical.jpeg"
-                                                                          class="rounded w-px-100 h-px-100"></div>
-                                                            </div>
-                                                            <div class="col-2 text-center mt-3 ">
-                                                                <div>
-                                                                    <h2>19/21 Days</h2>
+                                            <div class="row g-4 mb-4">
+                                                <h4>Medical Leaves</h4>
+                                                <div class="col-sm-6 col-xl-4">
+                                                    <div class="">
+                                                        <div class="card-body" id="tabimage">
+                                                            <div class="d-flex">
+                                                                <div class="content-left">
+                                                                    <!-- <span>All Leaves</span> -->
+
+                                                                    <img class="h-px-100 w-px-100 rounded overflow-hidden "
+                                                                         id="medicalimage"
+                                                                         src="assets/img/custom/medical1.png"
+                                                                         alt="Medical Image">
+
+                                                                    <!-- <p class="mb-0">Total Leaves</p> -->
                                                                 </div>
                                                             </div>
-                                                            <div class="col-6 text-center mt-3">
-                                                                <div><h2>02 leave Already taken</h2></div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-xl-4 ml-sm-3 ">
+                                                    <div class="card">
+                                                        <div class="card-body" id="tabimage1">
+                                                            <div class="d-flex align-items-start justify-content-between">
+                                                                <div class="content-left">
+
+                                                                    <div class="d-flex align-items-end mt-2">
+                                                                        <h4 class="mb-0 me-2">02 Days </h4>
+                                                                    </div>
+                                                                    <span>Taken</span>
+                                                                    <!--                                        <p class="mb-0">Last week analytics </p>-->
+                                                                </div>
+                                                                <div class="avatar">
+                                        <span class="avatar-initial rounded bg-label-danger">
+                                          <i class="bx bx-user-check bx-sm"></i>
+                                        </span>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row mt-3">
-                                                        <div class="col">
-                                                            <div class="mb-3 row">
-                                                                <label for="medicalid"
-                                                                       class="form-label">Date</label>
-                                                                <div class="col-md-10">
-                                                                    <input class="form-control" type="date"
-                                                                           value="2021-06-18" id=""/>
+                                                </div>
+                                                <div class="col-sm-6 col-xl-4">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="d-flex align-items-start justify-content-between">
+                                                                <div class="content-left">
+                                                                    <div class="d-flex align-items-end mt-2">
+                                                                        <h4 class="mb-0 me-2">5 Days</h4>
+                                                                        <!--                                            <small class="text-danger">(-14%)</small>-->
+                                                                    </div>
+                                                                    <span>Remaining</span>
+
+                                                                    <!--                                        <p class="mb-0">Last week analytics</p>-->
+                                                                </div>
+                                                                <div class="avatar">
+                                        <span class="avatar-initial rounded bg-label-success">
+                                            <i class="bx bx-group bx-sm"></i>
+                                        </span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--                                            filter item-->
+                                            <div class=" row card">
+
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-5">
+                                                            <div class="mb-3 row">
+                                                                <label for="medicalid" class="form-label">Date</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" type="date"
+                                                                           value="2021-06-18" id="medicalid"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5">
                                                             <div class="mb-3">
-                                                                <label for="medicalid"
-                                                                       class="form-label">Sort by Status</label>
+                                                                <label for="exampleFormControlSelect1"
+                                                                       class="form-label">Example select</label>
                                                                 <select class="form-select"
-                                                                        id="medicalid"
+                                                                        id="exampleFormControlSelect1"
                                                                         aria-label="Default select example">
                                                                     <option selected>Open this select menu</option>
-                                                                    <option value="1">Accept</option>
-                                                                    <option value="2">Reject</option>
-
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                        <div class="col-2 text-center mt-4">
-                                                            <div>
-                                                                <h3 class="">Results : 0</h3>
-                                                            </div>
+                                                        <div class="col-2">
+                                                            <button type="button" class="btn btn-primary mt-4 ">Search</button>
                                                         </div>
                                                     </div>
-
-
                                                 </div>
-
-
+                                                <div class="row">
+                                                    <div class="col ">
+                                                        <h6 style="padding-left: 10px">Results : Found In 4 rows</h6>
+                                                    </div>
+                                                </div>
                                             </div>
+
 
                                             <!--                            Table of leaves-->
 
+                                            <div class="card mt-5">
+                                                <div class="table-responsive text-nowrap">
+                                                    <table class="table">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>From</th>
+                                                            <th>To</th>
+                                                            <th>Reason</th>
+                                                            <th>Status</th>
 
-                                            <div class="table-responsive text-nowrap">
-                                                <table class="table">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>From</th>
-                                                        <th>To</th>
-                                                        <th>Reason</th>
-                                                        <th>Status</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody class="table-border-bottom-0">
+                                                        <tr>
+                                                            <td>
 
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody class="table-border-bottom-0">
-                                                    <tr>
-                                                        <td>
+                                                                <span class="fw-medium">2022/03/31</span>
+                                                            </td>
+                                                            <td>2022/04/31</td>
+                                                            <td>
+                                                                <div>
+                                                                    <span class="fw-medium">Fever</span>
+                                                                </div>
+                                                            </td>
+                                                            <td><span class="badge bg-label-primary me-1">Accept</span>
+                                                            </td>
 
-                                                            <span class="fw-medium">2022/03/31</span>
-                                                        </td>
-                                                        <td>2022/04/31</td>
-                                                        <td>
-                                                            <div>
-                                                                <span class="fw-medium">Fever</span>
-                                                            </div>
-                                                        </td>
-                                                        <td><span class="badge bg-label-primary me-1">Accept</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                                <span class="fw-medium">2022/03/31</span>
+                                                            </td>
+                                                            <td>2022/04/31</td>
+                                                            <td>
+                                                                <div>
+                                                                    <span class="fw-medium">Sick</span>
+                                                                </div>
+                                                            </td>
 
-                                                            <span class="fw-medium">2022/03/31</span>
-                                                        </td>
-                                                        <td>2022/04/31</td>
-                                                        <td>
-                                                            <div>
-                                                                <span class="fw-medium">Sick</span>
-                                                            </div>
-                                                        </td>
+                                                            <td><span class="badge bg-label-danger me-1">Reject</span>
+                                                            </td>
 
-                                                        <td><span class="badge bg-label-danger me-1">Reject</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
+                                                                <span class="fw-medium">2022/03/31</span>
+                                                            </td>
+                                                            <td>2022/04/31</td>
+                                                            <td>
+                                                                <div>
 
-                                                            <span class="fw-medium">2022/03/31</span>
-                                                        </td>
-                                                        <td>2022/04/31</td>
-                                                        <td>
-                                                            <div>
+                                                                    <span class="fw-medium">Funeral</span>
+                                                                </div>
 
-                                                                <span class="fw-medium">Funeral</span>
-                                                            </div>
+                                                            </td>
+                                                            <td><span class="badge bg-label-primary me-1">Accept</span>
+                                                            </td>
 
-                                                        </td>
-                                                        <td><span class="badge bg-label-primary me-1">Accept</span></td>
-
-                                                    </tr>
+                                                        </tr>
 
 
-                                                    </tbody>
-                                                </table>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
 
 
@@ -1686,37 +1740,37 @@
                                                             </div>
                                                         </div>
                                                     </div>
-<!--                                                    <div class="row mt-3">-->
-<!--                                                        <div class="col">-->
-<!--                                                            <div class="mb-3 row">-->
-<!--                                                                <label for="annualid"-->
-<!--                                                                       class="form-label">Date</label>-->
-<!--                                                                <div class="col-md-10">-->
-<!--                                                                    <input class="form-control" type="date"-->
-<!--                                                                           value="2021-06-18" id="maternityLeaveid"/>-->
-<!--                                                                </div>-->
-<!--                                                            </div>-->
-<!--                                                        </div>-->
-<!--                                                        <div class="col">-->
-<!--                                                            <div class="mb-3">-->
-<!--                                                                <label for="maternityLeaveid"-->
-<!--                                                                       class="form-label">Sort by Status</label>-->
-<!--                                                                <select class="form-select"-->
-<!--                                                                        id="maternityselect"-->
-<!--                                                                        aria-label="Default select example">-->
-<!--                                                                    <option selected>Open this select menu</option>-->
-<!--                                                                    <option value="1">Accept</option>-->
-<!--                                                                    <option value="2">Reject</option>-->
+                                                    <!--                                                    <div class="row mt-3">-->
+                                                    <!--                                                        <div class="col">-->
+                                                    <!--                                                            <div class="mb-3 row">-->
+                                                    <!--                                                                <label for="annualid"-->
+                                                    <!--                                                                       class="form-label">Date</label>-->
+                                                    <!--                                                                <div class="col-md-10">-->
+                                                    <!--                                                                    <input class="form-control" type="date"-->
+                                                    <!--                                                                           value="2021-06-18" id="maternityLeaveid"/>-->
+                                                    <!--                                                                </div>-->
+                                                    <!--                                                            </div>-->
+                                                    <!--                                                        </div>-->
+                                                    <!--                                                        <div class="col">-->
+                                                    <!--                                                            <div class="mb-3">-->
+                                                    <!--                                                                <label for="maternityLeaveid"-->
+                                                    <!--                                                                       class="form-label">Sort by Status</label>-->
+                                                    <!--                                                                <select class="form-select"-->
+                                                    <!--                                                                        id="maternityselect"-->
+                                                    <!--                                                                        aria-label="Default select example">-->
+                                                    <!--                                                                    <option selected>Open this select menu</option>-->
+                                                    <!--                                                                    <option value="1">Accept</option>-->
+                                                    <!--                                                                    <option value="2">Reject</option>-->
 
-<!--                                                                </select>-->
-<!--                                                            </div>-->
-<!--                                                        </div>-->
-<!--                                                        <div class="col-2 text-center mt-4">-->
-<!--                                                            <div>-->
-<!--                                                                <h3 class="">Results : 0</h3>-->
-<!--                                                            </div>-->
-<!--                                                        </div>-->
-<!--                                                    </div>-->
+                                                    <!--                                                                </select>-->
+                                                    <!--                                                            </div>-->
+                                                    <!--                                                        </div>-->
+                                                    <!--                                                        <div class="col-2 text-center mt-4">-->
+                                                    <!--                                                            <div>-->
+                                                    <!--                                                                <h3 class="">Results : 0</h3>-->
+                                                    <!--                                                            </div>-->
+                                                    <!--                                                        </div>-->
+                                                    <!--                                                    </div>-->
 
 
                                                 </div>

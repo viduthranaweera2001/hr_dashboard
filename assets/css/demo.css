@@ -129,3 +129,22 @@
   height: auto;
   align-content: center;
 }
+
+#tabcont {
+  background-color: #697a8d00;
+  width: 102%;
+
+}
+
+#tabimage{
+  padding: 1px;
+}
+
+#medicalimage{
+  padding-left: 10px;
+}
+
+#exampleFormControlSelect1{
+  width: 383px;
+}
+
